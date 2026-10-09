@@ -1,0 +1,6 @@
+cd /d "C:\Users\91868\Downloads\missedly-ai-starter\missedly-ai\backend"
+"C:\Users\91868\AppData\Local\Programs\Python\Python312\python.exe" -m venv .venv
+call .\.venv\Scripts\activate.bat
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+python -m uvicorn main:app --host 0.0.0.0 --port 8000
